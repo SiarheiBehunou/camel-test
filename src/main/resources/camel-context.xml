@@ -11,7 +11,11 @@
         <endpoint id="rssEndpoint" uri="bean:rssConsumer"/>
         <route>
             <from uri="rss:https://news.tut.by/rss/index.rss?consumer.delay=1000"/>
-            <to uri="ref:rssEndpoint"/>
+            <filter>
+                <method ref="rssFilter" method="filter"/>
+                <to uri="ref:rssEndpoint"/>
+            </filter>
+
         </route>
     </camelContext>
 </beans>

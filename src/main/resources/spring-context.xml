@@ -6,4 +6,5 @@
     <import resource="camel-context.xml"/>
     <bean name="testProcessor" class="test.TestProcessor"/>
     <bean name="rssConsumer" class="test.RssConsumer"/>
+    <bean name="rssFilter" class="test.RssFilter"/>
 </beans>
