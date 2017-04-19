@@ -8,10 +8,10 @@
        http://camel.apache.org/schema/spring/camel-spring.xsd">
 
     <camelContext xmlns="http://camel.apache.org/schema/spring">
+        <endpoint id="rssEndpoint" uri="bean:rssConsumer"/>
         <route>
             <from uri="rss:https://news.tut.by/rss/index.rss?consumer.delay=1000"/>
-            <process ref="testProcessor"/>
-            <to uri="stream:out"/>
+            <to uri="ref:rssEndpoint"/>
         </route>
     </camelContext>
 </beans>
