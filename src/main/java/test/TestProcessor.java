@@ -11,15 +11,6 @@ import java.io.File;
 import java.net.URI;
 import java.net.URL;
 
-/**
- * //TODO class description
- * <p/>
- * Copyright (C) 2017 copyright.com
- * <p/>
- * Date: Apr 18, 2017
- *
- * @author Siarhei_Behunou
- */
 public class TestProcessor implements Processor {
     @Override
     public void process(Exchange exchange) throws Exception {

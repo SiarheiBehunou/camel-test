@@ -11,15 +11,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-/**
- * //TODO class description
- * <p/>
- * Copyright (C) 2017 copyright.com
- * <p/>
- * Date: Apr 19, 2017
- *
- * @author Siarhei_Behunou
- */
 public class RssConsumer {
     @Handler
     public void processMessage(@Body SyndFeed feed) throws URISyntaxException, IOException {

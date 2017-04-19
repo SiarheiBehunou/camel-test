@@ -1,15 +1,5 @@
 package test;
 
-/**
- * //TODO class description
- * <p/>
- * Copyright (C) 2017 copyright.com
- * <p/>
- * Date: Apr 18, 2017
- *
- * @author Siarhei_Behunou
- */
-
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.main.Main;
 
